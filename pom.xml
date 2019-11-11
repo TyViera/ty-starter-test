@@ -6,17 +6,15 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>pe.ty</groupId>
-    <artifactId>ty-parent</artifactId>
+    <artifactId>ty-starters</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <relativePath/> <!-- lookup parent from repository -->
   </parent>
 
   <groupId>pe.ty</groupId>
   <artifactId>ty-starter-test</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
   <name>ty-starter-test</name>
-  <!--<packaging>pom</packaging>-->
-  <description>Demo project for Spring Boot</description>
+  <description>Starter test</description>
 
   <properties>
     <java.version>1.8</java.version>
@@ -31,12 +29,6 @@
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
-      <exclusions>
-        <exclusion>
-          <groupId>org.junit.vintage</groupId>
-          <artifactId>junit-vintage-engine</artifactId>
-        </exclusion>
-      </exclusions>
     </dependency>
 
     <dependency>
@@ -55,10 +47,16 @@
 
   <build>
     <plugins>
+
       <plugin>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-maven-plugin</artifactId>
+        <groupId>org.jfrog.buildinfo</groupId>
+        <artifactId>artifactory-maven-plugin</artifactId>
       </plugin>
+
+      <!--<plugin>-->
+      <!--<groupId>org.springframework.boot</groupId>-->
+      <!--<artifactId>spring-boot-maven-plugin</artifactId>-->
+      <!--</plugin>-->
     </plugins>
   </build>
 

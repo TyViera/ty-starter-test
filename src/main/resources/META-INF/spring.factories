@@ -1,0 +1,2 @@
+#org.springframework.boot.test.autoconfigure.web.reactive.AutoConfigureWebFlux=\
+#pe.ty.webflux.autoconfigure.TyWebFluxAutoConfiguration
